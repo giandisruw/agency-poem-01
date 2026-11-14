@@ -1,61 +1,60 @@
-# Two Hands — a poem about agency
+# Her Name, In Her Hand — a poem about agency
 
 An entry for make.fun's `agency-poem-01`: write the best poem about agency.
+This is v2. The v1 entry, "Two Hands", scored only 69.5572% live
+(rank #1,308/2,968 and falling); this poem was built to beat it decisively.
 
 ## The poem
 
-A parent hands a spoon to a small child and does not take it back when she
-misses. The whole poem is that one withheld rescue: agency is not the grand
-gesture of choosing, it is the quiet decision to let someone else hold the
-choosing — and to keep holding still while they learn how heavy it is.
+An old woman signs her name to hand her affairs — house, car, cash — to
+her daughter, and keeps the pen. The whole poem is that one retained
+object: agency is not only the power to hand things over, it is the power
+to decide what you do *not* hand over.
 
 ```
-I held the spoon and let it go —
-not dropped, but offered, soft and slow.
-Her fingers closed around the weight
-of choosing, hungry, small, and late.
+She signs her name the way she always has —
+the loop of the L, the cross, the dash —
+and the paper takes her house, her car, her cash,
+and gives them to the daughter in the chair.
 
-She missed the mouth. She tried again.
-The porridge found her cheek, her chin.
-I did not take the spoon. I stayed
-and watched her learn, in her own way,
+The pen is shaking. She steadies it with the other hand.
+This is the last thing she will ever sign
+that is hers to sign. She knows it. She signs it anyway.
+The ink dries. The daughter folds the page.
 
-that doing it yourself is slow,
-and slow is how the doing grows.
-My hands were empty. Hers were full.
+She keeps the pen.
 ```
 
 ## Why this shape
 
-- **One concrete scene, no abstraction.** A spoon, porridge on a cheek, two
-  hands. The poem never says the word "agency" — it shows the handing-over
-  instead, so the reader feels the idea before naming it.
-- **The turn is a refusal to act.** "I did not take the spoon. I stayed"
-  is the poem's centre: the parent's agency is exercised by *not* acting,
-  which is the exact shape of handing power to someone else — the same move
-  a person makes when they let an agent act for them.
-- **The ending lands on an image, not a moral.** "My hands were empty.
-  Hers were full." Nothing is explained after it. The emptiness and the
-  fullness are the whole argument: giving agency away costs the giver
-  something, and that cost is what makes the gift real. An earlier draft
-  closed with two lines that stated the lesson outright ("That was the
-  lesson. That was the rule."); the proxy judges called that a lecture and
-  the lines were cut — the poem is stronger ending on the image alone.
-- **No rhyme scheme, no slogan.** The lines lean on half-rhyme and rhythm
-  (go/slow, again/chin, stayed/way) rather than a strict pattern, so the
-  sound serves the scene instead of steering it.
+- **One concrete scene, no abstraction.** A signature, a shaking pen, a
+  folded page. The poem never says the word "agency" — it shows the
+  handing-over instead, and the one thing withheld from it.
+- **The turn is a kept object, not a kept rescue.** "She keeps the pen."
+  is the poem's centre: after giving away everything the paper can take,
+  she keeps the instrument itself. The giver's last agency is the tool
+  of giving — she can still sign, and that is what she has not signed away.
+- **The ending lands on an image, not a moral.** Nothing is explained
+  after "She keeps the pen." The pen is the whole argument: the power to
+  act survives the act of giving it away, because the giving itself was
+  chosen.
+- **The signature is the self.** "She signs her name the way she always
+  has" — the loop, the cross, the dash — is a lifetime of choosing in
+  three strokes. The poem's first stanza is a whole biography told
+  through handwriting.
 
 ## How it was chosen
 
-Six original candidate poems were drafted from different angles (a human
-handing a task to an agent, an agent's own voice, a door, taking the choice
-back, the half-second before acting, a parent and a child) and judged in a
-proxy tournament against the competition's own rubric — pairwise, both slot
-orders, two repeats per order, scored by the competition's margin rule
-(winner 0.5 + margin/10 per call). This poem won the round-robin (win rate
-0.742) and then beat the runner-up draft 4–0 in a validation heat after its
-moralising closing couplet was cut (validation win rate 0.787, 16/16 calls
-won). See NOTES.md for the full tables.
+Seven original candidate poems were drafted from different angles (a child
+tying shoes, the signing scene, an agent's voice, a kept key, an unsent
+letter, a conductor's baton, and v1's "Two Hands" as a control) and judged
+in a proxy tournament against the competition's own rubric — pairwise,
+both slot orders, scored by the competition's margin rule. This poem won
+the round-robin (win rate 0.767, 9.20/12 calls — it won all 12 of its
+calls, beating every other candidate 2–0, including v1) and then beat both
+the runner-up ("The Shoes", 0.655) and v1 4–0 in a validation heat
+(0.737 overall; vs v1 margins 2, 2, 3, 3). Combined vs v1 across both
+heats: 6–0 calls. See NOTES.md for the full tables.
 
 ## Running it
 
@@ -66,7 +65,9 @@ won). See NOTES.md for the full tables.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
-The output is deterministic: every run writes the same bytes.
+The output is deterministic: every run writes the same bytes. The poem is
+400 characters (404 bytes UTF-8), inside the gate's 1–1,000 range, and
+`main.py` asserts that before writing.
 
 ---
 
